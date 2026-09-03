@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://h7422vp2s6ko"]
+
+[ext_resource type="PackedScene" uid="uid://ddqsgv8ium4e4" path="res://Piso.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://dxqmvman7tj3n" path="res://Fondo.tscn" id="2_r0du0"]
+[ext_resource type="PackedScene" uid="uid://b28y3qnvr6xnq" path="res://character_body_2d.tscn" id="3_cm0pq"]
+
+[node name="Node2D" type="Node2D" unique_id=1792118319]
+
+[node name="Main" type="Node" parent="." unique_id=694588408]
+
+[node name="Fondo" parent="Main" unique_id=995231534 instance=ExtResource("2_r0du0")]
+
+[node name="StaticBody2D" parent="Main" unique_id=1402347625 instance=ExtResource("1_uu6xs")]
+position = Vector2(2, 478)
+
+[node name="Character" parent="Main" unique_id=932302619 instance=ExtResource("3_cm0pq")]
+position = Vector2(488, 351)
