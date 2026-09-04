@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1hta"]
 size = Vector2(1154, 166)
 
-[node name="Piso" type="StaticBody2D" unique_id=1402347625]
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1402347625]
 physics_material_override = SubResource("PhysicsMaterial_37tqn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=774993329]

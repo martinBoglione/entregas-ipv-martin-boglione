@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://h7422vp2s6ko"]
+
+[ext_resource type="Script" uid="uid://douycl3ypvl6j" path="res://main.gd" id="1_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://ddqsgv8ium4e4" path="res://Piso.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://dxqmvman7tj3n" path="res://Fondo.tscn" id="2_r0du0"]
+[ext_resource type="PackedScene" uid="uid://b28y3qnvr6xnq" path="res://Player.tscn" id="3_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://d0iak2klcg1eg" path="res://turret.tscn" id="5_fos0i"]
+
+[node name="Node2D" type="Node2D" unique_id=1792118319]
+
+[node name="Main" type="Node2D" parent="." unique_id=1729011950]
+script = ExtResource("1_cm0pq")
+
+[node name="Fondo" parent="Main" unique_id=995231534 instance=ExtResource("2_r0du0")]
+
+[node name="StaticBody2D" parent="Main" unique_id=1402347625 instance=ExtResource("1_uu6xs")]
+position = Vector2(2, 478)
+
+[node name="Player" parent="Main" unique_id=932302619 instance=ExtResource("3_cm0pq")]
+position = Vector2(488, 351)
+
+[node name="Turret" parent="Main" unique_id=249349552 instance=ExtResource("5_fos0i")]
+position = Vector2(193, 109)
+
+[node name="Turret2" parent="Main" unique_id=831314840 instance=ExtResource("5_fos0i")]
+position = Vector2(1024, 107)

@@ -10,7 +10,7 @@
 
 [node name="Fondo" parent="Main" unique_id=995231534 instance=ExtResource("2_r0du0")]
 
-[node name="StaticBody2D" parent="Main" unique_id=1402347625 instance=ExtResource("1_uu6xs")]
+[node name="Piso" parent="Main" unique_id=1402347625 instance=ExtResource("1_uu6xs")]
 position = Vector2(2, 478)
 
 [node name="Character" parent="Main" unique_id=932302619 instance=ExtResource("3_cm0pq")]

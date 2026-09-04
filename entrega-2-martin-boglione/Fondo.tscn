@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dxqmvman7tj3n"]
+
+[node name="Fondo" type="StaticBody2D" unique_id=995231534]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1174767823]
+offset_right = 1151.0
+offset_bottom = 646.0
