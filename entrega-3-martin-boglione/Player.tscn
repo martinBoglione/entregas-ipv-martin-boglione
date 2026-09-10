@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b28y3qnvr6xnq"]
+
+[ext_resource type="Script" uid="uid://b87wnukaw067t" path="res://Player.gd" id="1_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://cnp2naij5mcxi" path="res://assets/textures/cannon.png" id="2_ij6vw"]
+[ext_resource type="Script" uid="uid://bmx24e0bpt1nk" path="res://cannon.gd" id="3_kne1u"]
+[ext_resource type="PackedScene" uid="uid://7es83jxrjxy4" path="res://projectile.tscn" id="4_e80uo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ij6vw"]
+size = Vector2(161, 126)
+
+[node name="Player" type="CharacterBody2D" unique_id=932302619]
+collision_layer = 3
+script = ExtResource("1_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1763026965]
+position = Vector2(81, 63)
+shape = SubResource("RectangleShape2D_ij6vw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=681299271]
+offset_right = 162.0
+offset_bottom = 126.0
+color = Color(0, 0, 0, 1)
+
+[node name="Cannon" type="Sprite2D" parent="." unique_id=1558619955]
+position = Vector2(81, 63.000008)
+scale = Vector2(1.5588236, 1.3333334)
+texture = ExtResource("2_ij6vw")
+script = ExtResource("3_kne1u")
+projectile_scene = ExtResource("4_e80uo")
+
+[node name="FirePosition" type="Marker2D" parent="Cannon" unique_id=1042948913]
+position = Vector2(14.754717, -0.75000566)

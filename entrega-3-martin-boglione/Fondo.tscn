@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dxqmvman7tj3n"]
+
+[ext_resource type="Texture2D" uid="uid://dyk5veh08ri5l" path="res://assets/textures/background.png" id="1_fdthr"]
+
+[node name="Fondo" type="StaticBody2D" unique_id=995231534]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1148271176]
+layer = -1
+
+[node name="ColorRect" type="TextureRect" parent="CanvasLayer" unique_id=1074441258]
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = ExtResource("1_fdthr")

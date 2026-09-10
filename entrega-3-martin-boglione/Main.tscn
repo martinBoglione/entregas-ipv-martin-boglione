@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://h7422vp2s6ko"]
+
+[ext_resource type="Script" uid="uid://douycl3ypvl6j" path="res://main.gd" id="1_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://ddqsgv8ium4e4" path="res://Piso.tscn" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://dxqmvman7tj3n" path="res://Fondo.tscn" id="2_r0du0"]
+[ext_resource type="PackedScene" uid="uid://b28y3qnvr6xnq" path="res://Player.tscn" id="3_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://d0iak2klcg1eg" path="res://turret.tscn" id="5_fos0i"]
+[ext_resource type="PackedScene" uid="uid://bycl5yuponpvu" path="res://Platform.tscn" id="6_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://dqbgan6ipnbf" path="res://Box.tscn" id="7_lgr22"]
+
+[node name="Node2D" type="Node2D" unique_id=1792118319]
+
+[node name="Main" type="Node2D" parent="." unique_id=1729011950]
+script = ExtResource("1_cm0pq")
+
+[node name="Fondo" parent="Main" unique_id=995231534 instance=ExtResource("2_r0du0")]
+position = Vector2(-86, 25)
+
+[node name="Piso" parent="Main" unique_id=1402347625 instance=ExtResource("1_uu6xs")]
+position = Vector2(2, 478)
+
+[node name="Piso2" parent="Main" unique_id=1045753539 instance=ExtResource("1_uu6xs")]
+modulate = Color(0.75324726, 0.26165378, 0.61924845, 1)
+position = Vector2(-2, -447.00003)
+rotation = 1.5655701
+
+[node name="Player" parent="Main" unique_id=932302619 instance=ExtResource("3_cm0pq")]
+position = Vector2(30, 355)
+
+[node name="Camera2D" type="Camera2D" parent="Main/Player" unique_id=624187689]
+
+[node name="Turret" parent="Main" unique_id=249349552 instance=ExtResource("5_fos0i")]
+position = Vector2(530, 117)
+
+[node name="Turret2" parent="Main" unique_id=831314840 instance=ExtResource("5_fos0i")]
+position = Vector2(1562, 33)
+
+[node name="Platform1" parent="Main" unique_id=1867124201 instance=ExtResource("6_3dxm6")]
+position = Vector2(766, 294)
+
+[node name="Platform2" parent="Main" unique_id=1276529560 instance=ExtResource("6_3dxm6")]
+position = Vector2(1119, 158)
+
+[node name="Box" parent="Main" unique_id=1539640438 instance=ExtResource("7_lgr22")]
+position = Vector2(1417, 370)
+
+[node name="Box2" parent="Main" unique_id=903209331 instance=ExtResource("7_lgr22")]
+position = Vector2(1463, 372)
+
+[node name="Box3" parent="Main" unique_id=94995143 instance=ExtResource("7_lgr22")]
+position = Vector2(1463, 259)
+
+[node name="Box4" parent="Main" unique_id=2144128571 instance=ExtResource("7_lgr22")]
+position = Vector2(1416, 261)

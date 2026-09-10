@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dqbgan6ipnbf"]
+
+[ext_resource type="Texture2D" uid="uid://bqg6nxp3fp5xc" path="res://assets/textures/player.png" id="1_0bkxv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c5apd"]
+radius = 19.5
+height = 99.0
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1539640438]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=430540353]
+position = Vector2(20.5, 52.5)
+scale = Vector2(0.671875, 1.578125)
+texture = ExtResource("1_0bkxv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1722280048]
+position = Vector2(20.5, 52.5)
+shape = SubResource("CapsuleShape2D_c5apd")
